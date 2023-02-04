@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+    .header {
+        &__title {
+            width: 700px;
+        }
+
+        &__text {
+            width: 481px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        background-image: url(./img/BK__mobile.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .game {
+        grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+
+        &__box {
+            width: 343px;
+        }
+    }
+
+    .seasons {
+        grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64.5px;
+
+        &__play {
+            width: 343px;
+            display: grid;
+            justify-items: center;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__logo {
+            width: 344px;
+        }
+    }
+}
