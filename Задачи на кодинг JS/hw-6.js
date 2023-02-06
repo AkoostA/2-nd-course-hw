@@ -4,11 +4,10 @@ console.log("Задание 1");
 const checkArr = [1, 5, 4, 10, 0, 3];
 
 for (const item of checkArr) {
+    console.log(item);
+
     if (item === 10) {
-        console.log(item);
         break;
-    } else {
-        console.log(item);
     }
 }
 
@@ -80,18 +79,11 @@ console.log("Задание 8");
 const promptArr = [9, 8, 7, 6, 5];
 const promptNumb = Number(prompt("Введите число от 0 до 10 для проверки, есть ли данное число в массиве."))
 
-const promptCheck = (num) => {
-    for (let i = 0; i < promptArr.length; i++) {
-        if (promptArr[i] === num) {
-            console.log("Данное число есть в массиве");
-            return;
-        }
-    }
+if (promptArr.includes(promptNumb)) {
+    console.log("Данное число есть в массиве");
+} else {
     console.log("Такого числа нет в массиве");
-    return;
 }
-
-promptCheck(promptNumb);
 
 // Задание 9
 console.log("Задание 9");
@@ -135,7 +127,8 @@ const doubleArr = [
     [4, 5, 6]
 ];
 
-const oneArr = [].concat(...doubleArr);
+const oneArr = doubleArr.flat();
+// const oneArr = [].concat(...doubleArr);
 
 console.log(oneArr);
 
