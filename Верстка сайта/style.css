@@ -68,7 +68,7 @@ body {
   padding-bottom: 128px;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
   gap: 32px;
 }
 .game__box {
@@ -114,13 +114,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 233.5px;
-  padding-bottom: 233.5px;
+  padding-top: 234px;
+  padding-bottom: 234px;
   display: grid;
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
-  gap: 135px;
 }
 .seasons__play {
   width: 584px;
@@ -155,7 +154,80 @@ body {
   cursor: url(./img/Vector.png), pointer;
 }
 
-@media (min-width: 768px) {
+.words {
+  background-image: url(./img/BK__words.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
+}
+.words__play {
+  width: 584px;
+}
+.words__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--text-color);
+}
+.words__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-color);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.words__button {
+  font-family: "Montserrat", sans-serif;
+  width: 240.44px;
+  height: 48.6px;
+  background: var(--button-color);
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+.words__button:hover {
+  background: var(--button-hover);
+  cursor: url(./img/Vector.png), pointer;
+}
+.words__img {
+  grid-column-start: 1;
+  grid-row-end: 1;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__text {
+    text-align: center;
+  }
+  .game-three {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .seasons {
+    gap: 135px;
+    padding-bottom: 0;
+  }
+  .words {
+    gap: 135px;
+  }
+}
+@media (min-width: 767px) {
   .header__title {
     width: 700px;
   }
@@ -170,17 +242,12 @@ body {
   }
   .header {
     background-image: url(./img/BK__mobile.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .header__title {
-    text-align: center;
     font-size: 32px;
     line-height: 39px;
   }
   .header__text {
-    text-align: center;
     font-size: 14px;
     line-height: 22px;
   }
@@ -188,6 +255,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
   }
   .game__box {
+    grid-column-start: 1;
+    grid-column-end: 1;
     width: 343px;
   }
   .seasons {
@@ -211,6 +280,29 @@ body {
     text-align: center;
   }
   .seasons__logo {
+    width: 344px;
+  }
+  .words {
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64.5px;
+  }
+  .words__play {
+    width: 343px;
+    display: grid;
+    justify-items: center;
+  }
+  .words__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .words__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .words__logo {
     width: 344px;
   }
 }/*# sourceMappingURL=style.css.map */

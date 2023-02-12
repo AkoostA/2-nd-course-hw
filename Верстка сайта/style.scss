@@ -73,7 +73,7 @@ body {
     padding-bottom: 128px;
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
     gap: 32px;
 
 
@@ -126,13 +126,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 233.5px;
-    padding-bottom: 233.5px;
+    padding-top: 234px;
+    padding-bottom: 234px;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
-    gap: 135px;
 
     &__play {
         width: 584px;
@@ -169,6 +168,61 @@ body {
             background: var(--button-hover);
             cursor: url(./img/Vector.png), pointer;
         }
+    }
+}
+
+.words {
+    background-image: url(./img/BK__words.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 234px;
+    padding-bottom: 234px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
+
+    &__play {
+        width: 584px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: var(--text-color);
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--text-color);
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        font-family: 'Montserrat', sans-serif;
+        width: 240.44px;
+        height: 48.6px;
+        background: var(--button-color);
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--text-color);
+
+        &:hover {
+            background: var(--button-hover);
+            cursor: url(./img/Vector.png), pointer;
+        }
+    }
+
+    &__img {
+        grid-column-start: 1;
+        grid-row-end: 1;
     }
 }
 
