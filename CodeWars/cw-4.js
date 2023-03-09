@@ -1,12 +1,9 @@
 function solution(str){
-    const result = str.split('');
-    result.reverse();
+    const result = str.split('').reverse().join('');
 
-    return result.join('');
+    return result;
 }
 
 console.log(solution('world')); // returns 'dlrow'
 console.log(solution('hello')); // returns 'olleh'
 console.log(solution('')); // returns ''
-
-// Split, reverse, join

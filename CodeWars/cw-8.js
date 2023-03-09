@@ -1,11 +1,5 @@
 function invert(array) {
-    const result = array.map(n => {
-        if (n >= 0) {
-            return -n;
-        } else {
-            return n * -1;
-        }
-    });
+    const result = array.map(n => -n);
     return result;
  }
 

@@ -12,5 +12,3 @@ function squareSum(numbers) {
 console.log(squareSum([1, 2])); // returns 5
 console.log(squareSum([0, 3, 4, 5])); // returns 50
 console.log(squareSum([])); // returns 0
-
-// map и reduce

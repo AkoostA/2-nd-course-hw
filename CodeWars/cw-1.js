@@ -11,5 +11,3 @@ function strCount(str, letter){
 console.log(strCount("Hello", 'o')); // returns 1
 console.log(strCount("Hello", 'l')); // returns 2
 console.log(strCount("", 'z')); // returns 0
-
-// split, filter, length?
